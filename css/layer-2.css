@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+/* main css */
+:root{
+    --main-color: #000086;
+    --secondary-color:#041851;
+    --bg-color: #F6F9FF;
+    --bg-main-color: #FFFFFF;
+    --progress-color: #CFD0D7;
+}
+body{
+    width: 100%;
+    /* min-height: 100vh; */
+    height: 100%;
+    font-family: 'El Messiri', sans-serif;
+    font-Weight :700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.7rem;
+    text-align:right;
+    color: var(--main-color);
+
+}
+.page-wrapper{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    text-align: center;
+    max-width: 1000px;
+}
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* margin-bottom: 30px; */
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* width: 350px; */
+}
+.operations-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.progress-container::before{
+    content: '';
+    background-color: var(--progress-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    transition: .4s ease;
+}
+.progress{
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: .4s ease;
+    /* direction: rtl; */
+}
+.circle{
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px solid var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.circle.active{
+    border-color: var(--main-color);
+}
+.circle.active span{
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease;
+}
+.btn.active{
+    transform: scale(.97);
+}
+@media screen and (max-width: 375px) {
+    .type p {
+        font-size: .9rem;
+    }
+}

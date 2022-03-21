@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+/* main css */
+:root{
+    --main-color: #000086;
+    --secondary-color:#041851;
+    --bg-color: #F6F9FF;
+    --bg-main-color: #FFFFFF;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'El Messiri', sans-serif;
+    font-Weight :700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.7rem;
+    text-align:right;
+    color: var(--main-color);
+
+}
+.image{
+    padding-top: 2rem;
+    
+}
+.welcome-content{
+    margin-top: 2rem;
+    background: var(--bg-color);
+    box-shadow: 0px -2px 12px rgba(49, 49, 49, 0.25);
+}
+h1,h2,h3,h4,h5,h6,p{
+    direction: rtl;
+    font-family: 'El Messiri', sans-serif;
+}
+.card{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 4px 4px;
+}
+.card-header{
+    background-color: var(--bg-color);
+    border: none;
+}
+.card-header .header-content{
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--main-color);
+}
+.card-header .header-content p{
+    font-weight: 600;
+    font-size: 14px;
+}
+.card-body{
+    background-color: var(--bg-main-color);
+}
+.card-body label{
+    color: var(--secondary-color) ;
+    font-weight: 400;
+    font-size: 14px;
+}
+.iti{
+    width: 100% !important;
+}
+.iti__flag-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0 !important;
+    left: auto !important;
+    padding: 1px;
+}
+.btn
+{
+    width: 100% !important;
+    background-color: var(--main-color);
+    border-radius: 5px !important;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
+.welcome-content .welcome-msg h2{
+    font-size: 3rem;
+}
+.welcome-content .welcome-msg h3{
+    font-size: 2.25rem;
+    margin-top: 1rem;
+}
+.welcome-content .welcome-msg p{
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+
+}
+.turn-en button{
+    background-color: inherit !important;
+    border: none !important;
+    background-image: url('../images/circle-en.svg') !important;
+    /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .welcome-content .welcome-msg{
+        padding-top: 2rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    .welcome-content .welcome-msg h2{
+        font-size: 2rem;
+    }
+    .welcome-content .welcome-msg h3{
+        font-size: 1.5rem;
+    }
+    .welcome-content .welcome-msg p{
+        
+        font-size: 1rem;
+    }
+}
